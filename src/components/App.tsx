@@ -10,7 +10,9 @@ function Scene() {
   return (
     <scene>
       {/*  @ts-ignore */}
-      <Sphere />
+      <Sphere>
+        <meshNormalMaterial />
+      </Sphere>
     </scene>
   );
 }
