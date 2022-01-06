@@ -19,11 +19,13 @@ function Scene() {
 
 function Viewer() {
   return (
-    <StudioCanvas>
-      <ambientLight />
-      <Scene />
-      <OrbitControls />
-    </StudioCanvas>
+    <section className={"h-screen bg-black"}>
+      <StudioCanvas>
+        <ambientLight />
+        <Scene />
+        <OrbitControls />
+      </StudioCanvas>
+    </section>
   );
 }
 
