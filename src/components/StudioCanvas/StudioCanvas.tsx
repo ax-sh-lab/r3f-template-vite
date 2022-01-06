@@ -16,7 +16,7 @@ export default function StudioCanvas({
   ...props
 }: React.ComponentProps<any>) {
   return (
-    <Canvas {...props}>
+    <Canvas className={"h-full w-full"} {...props}>
       <React.Suspense fallback={<Loader />}>{children}</React.Suspense>
     </Canvas>
   );
