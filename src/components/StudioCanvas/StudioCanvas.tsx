@@ -1,6 +1,6 @@
 import React from "react";
 import { Html } from "@react-three/drei";
-import { Canvas } from "@react-three/fiber";
+import { Canvas, Props } from "@react-three/fiber";
 
 // @ts-ignore
 function Loader() {
@@ -11,10 +11,7 @@ function Loader() {
   );
 }
 
-export default function StudioCanvas({
-  children,
-  ...props
-}: React.ComponentProps<any>) {
+export default function StudioCanvas({ children, ...props }: Props) {
   return (
     <Canvas className={"h-full w-full"} {...props}>
       <React.Suspense fallback={<Loader />}>{children}</React.Suspense>
